@@ -62,9 +62,6 @@ class Appoint:
             i['stop'] = datetime(2023, 1, 1, 0, 0) \
                         + timedelta(hours=int(finish[0]), minutes=float(finish[1]))
 
-        init_index = self.busy[0]
-        self.temp_stop = init_index['stop']
-
         return self.freetime_list
 
     def __str__(self):
